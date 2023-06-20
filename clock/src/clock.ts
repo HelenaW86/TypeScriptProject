@@ -12,9 +12,9 @@ console.log(mySize);
 
   //Functions   utan return = void
 	const calculateTax = (income: number, year = 2022) : number =>  {
-  return 1;
+  return income + year
 	}
-
+	calculateTax(33000)
 	// objects + readOnly = kan inte skrivas om
 let employee: { readonly id: number, name: string, retire: (date: Date) => void} = {id: 1, name:  "no name", retire: (date: Date) => {console.log(date)}};
 employee.name = "Moch";
@@ -99,3 +99,26 @@ function getCustomer(id: number) : Customer | null | undefined
 
  console.log(customer?.birthDay, customer2?.birthDay?.getFullYear())
 
+ type Task = [number, string, boolean];
+
+ const halloj : Task = [1, "hej" , true];
+
+ let variabel : boolean = true;
+
+ let v2 : [string, boolean] = ["hej", true]
+
+ let v3 : object = {hej: "hej"}
+
+ type Oooo = {
+	age: number,
+	name: string,
+	kids: boolean,
+	born: Date
+ }
+
+ const human : Oooo = {
+	name: "Helena",
+	age: 36,
+	kids: true,
+	born: new Date("1986-10-24")
+ }

@@ -35,6 +35,8 @@ form?.addEventListener("submit", e => {
       saveTasks()
     })
 
+    saveTasks()
+  
     checkbox.type = "checkbox"
     checkbox.checked = task.completed
     label.append(checkbox, task.title)

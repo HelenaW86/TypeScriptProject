@@ -8,8 +8,9 @@ let mySize = 3 /* Size.Large */;
 console.log(mySize);
 //Functions   utan return = void
 const calculateTax = (income, year = 2022) => {
-    return 1;
+    return income + year;
 };
+calculateTax(33000);
 // objects + readOnly = kan inte skrivas om
 let employee = { id: 1, name: "no name", retire: (date) => { console.log(date); } };
 employee.name = "Moch";
@@ -53,3 +54,13 @@ function getCustomer(id) {
 let customer = getCustomer(0);
 let customer2 = getCustomer(1);
 console.log(customer === null || customer === void 0 ? void 0 : customer.birthDay, (_a = customer2 === null || customer2 === void 0 ? void 0 : customer2.birthDay) === null || _a === void 0 ? void 0 : _a.getFullYear());
+const halloj = [1, "hej", true];
+let variabel = true;
+let v2 = ["hej", true];
+let v3 = { hej: "hej" };
+const human = {
+    name: "Helena",
+    age: 36,
+    kids: true,
+    born: new Date("1986-10-24")
+};
